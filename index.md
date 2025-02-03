@@ -7,10 +7,8 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-            
-            
 
-      window.addEventListener("onEmbeddedMessagingReady", e => {
+ 	window.addEventListener("onEmbeddedMessagingReady", e => {
 						  embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
 						    // List the pre-chat field names with the value and whether
 						    // it's editable in the pre-chat form.
@@ -33,14 +31,13 @@
 		 				  });
                           
 						});
-            
 
 			embeddedservice_bootstrap.init(
-				'00DVF00000ASfTt',
+				'00DP0000003zzZf',
 				'NAT_Chat_Web',
-				'https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514',
+				'https://fleetcorna--stagingdev.sandbox.my.site.com/ESWNATChatWeb1730336855134',
 				{
-					scrt2URL: 'https://fleetcorna--uat.sandbox.my.salesforce-scrt.com'
+					scrt2URL: 'https://fleetcorna--stagingdev.sandbox.my.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -48,7 +45,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://fleetcorna--stagingdev.sandbox.my.site.com/ESWNATChatWeb1730336855134/assets/js/bootstrap.min.js' ></script>
 
 
 <button id= "launchchat" onclick="launchchat()">
