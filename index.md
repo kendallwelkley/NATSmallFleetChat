@@ -45,18 +45,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://fleetcorna--stagingdev.sandbox.my.site.com/ESWNATChatWeb1730336855134/assets/js/bootstrap.min.js' ></script>
-
-
-<button id= "launchchat" onclick="launchchat()">
-	Chat
-</button>
-
-<script>
-function launchchat(){
-	initEmbeddedMessaging();
- }
-</script>
+<script type='text/javascript' src='https://fleetcorna--stagingdev.sandbox.my.site.com/ESWNATChatWeb1730336855134/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html> 
