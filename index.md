@@ -36,9 +36,9 @@
             
 
 			embeddedservice_bootstrap.init(
-				'00DDk00000096DG',
+				'00DVF00000ASfTt',
 				'NAT_Chat_Web',
-				'https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730393482019',
+				'https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514',
 				{
 					scrt2URL: 'https://fleetcorna--uat.sandbox.my.salesforce-scrt.com'
 				}
@@ -48,7 +48,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730393482019/assets/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 
 <button id= "launchchat" onclick="launchchat()">
