@@ -44,7 +44,17 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://fleetcorna--uat.sandbox.my.site.com/ESWNATChatWeb1730916725514/assets/js/bootstrap.min.js' ></script>
 
+
+<button id= "launchchat" onclick="launchchat()">
+	Chat
+</button>
+
+<script>
+function launchchat(){
+	initEmbeddedMessaging();
+ }
+</script>
 </body>
 </html> 
