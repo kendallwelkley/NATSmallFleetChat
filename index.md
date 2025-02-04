@@ -7,6 +7,29 @@
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			 window.addEventListener("onEmbeddedMessagingReady", e => {
+						  embeddedservice_bootstrap.prechatAPI.setVisiblePrechatFields({
+						    // List the pre-chat field names with the value and whether
+						    // it's editable in the pre-chat form.
+						    	"Account_Code": {
+						      	"value": "AA123",
+						      	"isEditableByEndUser": true
+						    	},
+		 					"_email": {
+						      	"value": "tguirgis@testemail.com.invalid",
+						      	"isEditableByEndUser": true
+						    	},
+							"_firstName": {
+						      	"value": "Tony",
+						      	"isEditableByEndUser": true
+						    	},
+		 					"_lastName": {
+						      	"value": "Guirgis",
+						      	"isEditableByEndUser": true
+						    	}
+		 				  });
+                          
+						});
 
 			embeddedservice_bootstrap.init(
 				'00DVF00000ASfTt',
